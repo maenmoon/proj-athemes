@@ -1,0 +1,21 @@
+uuid: ff075b57-d8f9-4af9-ac0c-be963cc69715
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_testimonials
+    - node.type._author
+  module:
+    - text
+id: node._author.field_testimonials
+field_name: field_testimonials
+entity_type: node
+bundle: _author
+label: Testimonials
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

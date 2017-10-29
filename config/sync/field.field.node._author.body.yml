@@ -1,0 +1,22 @@
+uuid: 149c9aa7-841f-439c-9783-891f0afd0e7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type._author
+  module:
+    - text
+id: node._author.body
+field_name: body
+entity_type: node
+bundle: _author
+label: 'Author Description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

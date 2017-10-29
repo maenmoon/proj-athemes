@@ -1,0 +1,40 @@
+uuid: 26cf3126-cf9b-48c1-bec3-6c05790675f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.theme.body
+    - node.type.theme
+  module:
+    - text
+    - user
+id: node.theme.teaser
+targetEntityType: node
+bundle: theme
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_content_files: true
+  field_is_free: true
+  field_is_responsive: true
+  field_large_image: true
+  field_list_of_files: true
+  field_medium_image: true
+  field_password: true
+  field_price: true
+  field_small_image: true
+  field_text_list: true
+  field_url_for_live_demo: true
+  field_username: true

@@ -1,0 +1,32 @@
+uuid: b2799b22-b3d1-4994-b8f1-2d5faffa8b6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.purchase.body
+    - node.type.purchase
+  module:
+    - text
+    - user
+id: node.purchase.teaser
+targetEntityType: node
+bundle: purchase
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_content_type: true
+  field_email_address: true
+  field_item_being_purchased: true
+  field_user: true

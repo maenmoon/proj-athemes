@@ -1,0 +1,17 @@
+uuid: bbb9cfac-796b-47f2-85a8-19ec42aa303e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Theme
+type: theme
+description: 'Themes downloadable by website visitors'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

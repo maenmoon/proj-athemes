@@ -1,0 +1,21 @@
+uuid: fc7156e2-4cfa-4bd5-9e5f-39b52c27f300
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_item_being_purchased
+    - node.type.purchase
+  module:
+    - options
+id: node.purchase.field_item_being_purchased
+field_name: field_item_being_purchased
+entity_type: node
+bundle: purchase
+label: 'Package being purchased'
+description: 'A list of which theme package is being purchased'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

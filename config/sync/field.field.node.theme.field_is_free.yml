@@ -1,0 +1,23 @@
+uuid: 8c276771-780e-4fe0-a77b-4d5101a6f903
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_is_free
+    - node.type.theme
+id: node.theme.field_is_free
+field_name: field_is_free
+entity_type: node
+bundle: theme
+label: 'Is theme free'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

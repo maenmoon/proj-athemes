@@ -1,0 +1,94 @@
+uuid: 92ca2264-d0e5-4b56-a10e-6c624049f3e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node._author.body
+    - field.field.node._author.field_email_address
+    - field.field.node._author.field_first_name
+    - field.field.node._author.field_last_name
+    - field.field.node._author.field_linkedin_url
+    - field.field.node._author.field_phone_number
+    - field.field.node._author.field_picture
+    - field.field.node._author.field_testimonials
+    - node.type._author
+  module:
+    - image
+    - link
+    - text
+    - user
+id: node._author.default
+targetEntityType: node
+bundle: _author
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_email_address:
+    weight: 108
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_first_name:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_last_name:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_linkedin_url:
+    weight: 106
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_phone_number:
+    weight: 107
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_picture:
+    weight: 104
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_testimonials:
+    weight: 109
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

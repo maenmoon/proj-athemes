@@ -1,0 +1,21 @@
+uuid: 93b69bc2-b7ea-4c1c-86d0-0742ea082110
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_list_of_files
+    - node.type.theme
+  module:
+    - text
+id: node.theme.field_list_of_files
+field_name: field_list_of_files
+entity_type: node
+bundle: theme
+label: 'List of files'
+description: 'List the files included when a user downloads a theme'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

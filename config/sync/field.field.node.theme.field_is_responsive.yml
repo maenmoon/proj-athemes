@@ -1,0 +1,23 @@
+uuid: 5b77ce5d-603e-4208-99c9-c552b3162d6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_is_responsive
+    - node.type.theme
+id: node.theme.field_is_responsive
+field_name: field_is_responsive
+entity_type: node
+bundle: theme
+label: 'Is responsive?'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

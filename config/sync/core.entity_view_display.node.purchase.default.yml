@@ -1,0 +1,61 @@
+uuid: 7974826c-fda0-459c-bb83-359d88e313c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.purchase.body
+    - field.field.node.purchase.field_email_address
+    - field.field.node.purchase.field_item_being_purchased
+    - field.field.node.purchase.field_theme
+    - field.field.node.purchase.field_user
+    - node.type.purchase
+  module:
+    - options
+    - text
+    - user
+id: node.purchase.default
+targetEntityType: node
+bundle: purchase
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_email_address:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_item_being_purchased:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_theme:
+    weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_user:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

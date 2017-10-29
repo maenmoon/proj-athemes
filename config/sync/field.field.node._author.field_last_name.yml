@@ -1,0 +1,19 @@
+uuid: 64b09a75-c345-4b8d-87a9-d3a69435e1b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_last_name
+    - node.type._author
+id: node._author.field_last_name
+field_name: field_last_name
+entity_type: node
+bundle: _author
+label: 'Last name'
+description: 'Last name of the author'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

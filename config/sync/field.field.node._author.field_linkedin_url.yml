@@ -1,0 +1,23 @@
+uuid: 92dfb38d-5f96-4896-a3cf-1880b94516ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_linkedin_url
+    - node.type._author
+  module:
+    - link
+id: node._author.field_linkedin_url
+field_name: field_linkedin_url
+entity_type: node
+bundle: _author
+label: 'Linkedin URL'
+description: 'The URL to the authors Linkedin account'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

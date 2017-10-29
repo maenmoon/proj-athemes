@@ -1,0 +1,21 @@
+uuid: 06cb138a-455e-4507-889a-7617c7fdaeb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_text_list
+    - node.type.theme
+  module:
+    - text
+id: node.theme.field_text_list
+field_name: field_text_list
+entity_type: node
+bundle: theme
+label: 'List of features'
+description: 'List of features such as mobile-first, accessible, browser-tested, etc.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,27 @@
+uuid: 0839df59-623d-44ba-aa5f-509064819e22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_files
+    - node.type.theme
+  module:
+    - file
+id: node.theme.field_content_files
+field_name: field_content_files
+entity_type: node
+bundle: theme
+label: 'Theme File(s)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt php zip tar.gz gz pdf doc docx png jpg jpeg psd gif'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

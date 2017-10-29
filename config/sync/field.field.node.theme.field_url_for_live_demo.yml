@@ -1,0 +1,23 @@
+uuid: 69143d77-2811-4418-a041-6843407b9b80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_url_for_live_demo
+    - node.type.theme
+  module:
+    - link
+id: node.theme.field_url_for_live_demo
+field_name: field_url_for_live_demo
+entity_type: node
+bundle: theme
+label: 'URL for live demo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

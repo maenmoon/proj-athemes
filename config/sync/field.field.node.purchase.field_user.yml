@@ -1,0 +1,28 @@
+uuid: bd7e5eda-f813-4097-b56c-9ab91296d7fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_user
+    - node.type.purchase
+id: node.purchase.field_user
+field_name: field_user
+entity_type: node
+bundle: purchase
+label: Username
+description: 'Purchaser''s user account'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: true
+field_type: entity_reference
