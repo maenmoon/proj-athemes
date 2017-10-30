@@ -29,4 +29,5 @@ hidden:
   field_content_type: true
   field_email_address: true
   field_item_being_purchased: true
+  field_theme: true
   field_user: true

@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.theme.field_password
     - field.field.node.theme.field_price
     - field.field.node.theme.field_small_image
+    - field.field.node.theme.field_software
     - field.field.node.theme.field_text_list
     - field.field.node.theme.field_url_for_live_demo
     - field.field.node.theme.field_username
@@ -111,6 +112,15 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_software:
+    weight: 134
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_text_list:
     weight: 133

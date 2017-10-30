@@ -1,0 +1,29 @@
+uuid: 7755d342-4d3d-4ef4-b36c-96ae52d24bc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_software
+    - node.type.theme
+    - taxonomy.vocabulary.technologies
+id: node.theme.field_software
+field_name: field_software
+entity_type: node
+bundle: theme
+label: software
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      technologies: technologies
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
