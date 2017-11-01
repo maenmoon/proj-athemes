@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "fae5ffff067766e6a645e1114278fb07",
+    "content-hash": "ce2e6e4cdf04e7b27e79d991e0cd2a82",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1545,50 +1545,6 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "time": "2017-10-04T19:25:32+00:00"
-        },
-        {
-            "name": "drupal/elfsight_social_media_icons",
-            "version": "dev-1.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/elfsight_social_media_icons",
-                "reference": "03128b1f8b2fdf990987684209e5eeff8b881bc6"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1506063546",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Elfsight",
-                    "homepage": "https://www.drupal.org/user/3544810"
-                }
-            ],
-            "description": "Elfsight Social Media Icons module for drupal website",
-            "homepage": "https://www.drupal.org/project/elfsight_social_media_icons",
-            "support": {
-                "source": " ",
-                "issues": " ",
-                "irc": " "
-            },
-            "time": "2017-09-22T06:54:23+00:00"
         },
         {
             "name": "easyrdf/easyrdf",
@@ -6009,9 +5965,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "drupal/elfsight_social_media_icons": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
