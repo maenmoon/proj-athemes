@@ -1,0 +1,20 @@
+uuid: b3d24a35-a1e9-4b6c-81ae-522d86359eda
+langcode: en
+status: true
+dependencies:
+  module:
+    - mailchimp_signup
+  theme:
+    - bartik
+id: mailchimpsubscriptionformnewsletter
+theme: bartik
+region: featured_bottom_first
+weight: 0
+provider: null
+plugin: 'mailchimp_signup_subscribe_block:newsletter'
+settings:
+  id: 'mailchimp_signup_subscribe_block:newsletter'
+  label: 'Mailchimp Subscription Form: Newsletter'
+  provider: mailchimp_signup
+  label_display: '0'
+visibility: {  }

@@ -2,10 +2,6 @@ uuid: f9f17a83-05c7-4cf7-97f4-d6217f60904c
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:basic:d444b60c-9e1f-4a07-9675-ad4682ff0138'
-  module:
-    - block_content
   theme:
     - bartik
 id: share
