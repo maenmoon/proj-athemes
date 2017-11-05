@@ -1,0 +1,7 @@
+name: custom
+type: module
+description: academy theme core
+core: 8.x
+package: Custom
+dependencies:
+  - panels
