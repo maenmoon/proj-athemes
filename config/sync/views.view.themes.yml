@@ -256,7 +256,7 @@ display:
     position: 2
     display_options:
       display_extenders: {  }
-      path: themes
+      path: our-themes
       pager:
         type: mini
         options:
