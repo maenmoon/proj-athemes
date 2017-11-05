@@ -35,6 +35,7 @@ hidden:
   field_password: true
   field_price: true
   field_small_image: true
+  field_software: true
   field_text_list: true
   field_url_for_live_demo: true
   field_username: true
