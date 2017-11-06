@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains athemes_core.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function athemes_core_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the athemes_core module.
+    case 'help.page.athemes_core':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Stores core information for academy themes website') . '</p>';
+      return $output;
+
+    default:
+  }
+}
