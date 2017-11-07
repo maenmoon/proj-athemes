@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_large_image
-    - image.style.thumbnail
+    - image.style.medium_short
     - node.type.theme
   module:
     - image
@@ -121,7 +121,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: thumbnail
+            image_style: medium_short
             image_link: content
           group_column: ''
           group_columns: {  }

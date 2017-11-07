@@ -1,0 +1,14 @@
+uuid: 2ad2bf52-2154-401d-99d1-2be1f3d3baf3
+langcode: en
+status: true
+dependencies: {  }
+name: medium_short
+label: Medium-short
+effects:
+  27efa62c-faa2-4fa9-b395-17a95e9e1772:
+    uuid: 27efa62c-faa2-4fa9-b395-17a95e9e1772
+    id: image_resize
+    weight: 1
+    data:
+      width: 370
+      height: 225
