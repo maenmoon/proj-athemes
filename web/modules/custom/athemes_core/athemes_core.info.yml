@@ -1,0 +1,7 @@
+name: Academy Themes Core
+type: module
+description: Stores core information for the academy themes website
+core: 8.x
+package: AcademyThemes
+dependencies:
+  - default_content
