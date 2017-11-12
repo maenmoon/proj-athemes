@@ -17,14 +17,432 @@ dependencies:
     - field.field.node.theme.field_text_list
     - field.field.node.theme.field_url_for_live_demo
     - field.field.node.theme.field_username
+    - field.field.node.theme.panelizer
     - image.style.thumbnail
     - node.type.theme
   module:
     - file
     - image
     - link
+    - panelizer
     - text
     - user
+third_party_settings:
+  panelizer:
+    enable: true
+    custom: true
+    allow: false
+    default: theme_layout
+    displays:
+      default:
+        blocks:
+          0eaf8bf8-786a-4401-be70-e4c12d2b5c28:
+            id: 'entity_field:node:uid'
+            label: 'Authored by'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: author
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 0
+            uuid: 0eaf8bf8-786a-4401-be70-e4c12d2b5c28
+          020e6030-7c25-4a74-a479-72205e7f51bb:
+            id: 'entity_field:node:created'
+            label: 'Authored on'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: timestamp
+              settings:
+                date_format: medium
+                custom_date_format: ''
+                timezone: ''
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 0
+            uuid: 020e6030-7c25-4a74-a479-72205e7f51bb
+          ffafcb97-b5f3-4831-b937-c3a5a8f48efa:
+            id: 'entity_field:node:body'
+            label: Description
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: text_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 101
+            uuid: ffafcb97-b5f3-4831-b937-c3a5a8f48efa
+          17812a18-6ebb-4fc7-b9e7-c87811c56bc4:
+            id: 'entity_field:node:field_content_files'
+            label: 'Theme File(s)'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: file_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 111
+            uuid: 17812a18-6ebb-4fc7-b9e7-c87811c56bc4
+          f5347b66-f4c7-4bb2-b69d-ecd0bf0e3997:
+            id: 'entity_field:node:field_is_free'
+            label: 'Is theme free'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: boolean
+              settings:
+                format: default
+                format_custom_false: ''
+                format_custom_true: ''
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 106
+            uuid: f5347b66-f4c7-4bb2-b69d-ecd0bf0e3997
+          e6e93764-09c2-43aa-8be0-a31de2adcf7b:
+            id: 'entity_field:node:field_is_responsive'
+            label: 'Is responsive?'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: boolean
+              settings:
+                format: default
+                format_custom_false: ''
+                format_custom_true: ''
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 107
+            uuid: e6e93764-09c2-43aa-8be0-a31de2adcf7b
+          73b8e363-ce4b-4435-8eae-6321bde01e49:
+            id: 'entity_field:node:field_large_image'
+            label: 'Desktop image of the theme'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: image
+              settings:
+                image_style: thumbnail
+                image_link: file
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 102
+            uuid: 73b8e363-ce4b-4435-8eae-6321bde01e49
+          889e0b7c-0da5-4f62-9f30-f5deb0f79f6b:
+            id: 'entity_field:node:field_list_of_files'
+            label: 'List of files'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: text_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 110
+            uuid: 889e0b7c-0da5-4f62-9f30-f5deb0f79f6b
+          8ab469a4-fd09-4733-bdb2-9e32575f1c83:
+            id: 'entity_field:node:field_medium_image'
+            label: 'Tablet image of the theme'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: image
+              settings:
+                image_style: thumbnail
+                image_link: file
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 103
+            uuid: 8ab469a4-fd09-4733-bdb2-9e32575f1c83
+          d5f556d0-3c09-48f3-a684-e606662b8c84:
+            id: 'entity_field:node:field_password'
+            label: Password
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: string
+              settings:
+                link_to_entity: false
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 112
+            uuid: d5f556d0-3c09-48f3-a684-e606662b8c84
+          5b8c405e-bf7d-4303-a8e2-fe68044a8aad:
+            id: 'entity_field:node:field_price'
+            label: 'Price of theme'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: number_decimal
+              settings:
+                thousand_separator: ''
+                decimal_separator: .
+                scale: 2
+                prefix_suffix: true
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 105
+            uuid: 5b8c405e-bf7d-4303-a8e2-fe68044a8aad
+          571d9883-8bba-442c-a668-bbe52a326ee0:
+            id: 'entity_field:node:field_small_image'
+            label: 'Mobile image of the theme'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: image
+              settings:
+                image_style: thumbnail
+                image_link: file
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 104
+            uuid: 571d9883-8bba-442c-a668-bbe52a326ee0
+          14513f60-5266-4774-bff2-0920c266809f:
+            id: 'entity_field:node:field_software'
+            label: Software
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: entity_reference_label
+              settings:
+                link: true
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 114
+            uuid: 14513f60-5266-4774-bff2-0920c266809f
+          f4531b95-53be-4d91-b18a-cb01afa0048e:
+            id: 'entity_field:node:field_text_list'
+            label: 'List of features'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: text_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 113
+            uuid: f4531b95-53be-4d91-b18a-cb01afa0048e
+          e62533bc-4304-4f26-8edb-d936ce6ce8c0:
+            id: 'entity_field:node:field_url_for_live_demo'
+            label: 'URL for live demo'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: link
+              settings:
+                trim_length: 80
+                url_only: false
+                url_plain: false
+                rel: ''
+                target: ''
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 108
+            uuid: e62533bc-4304-4f26-8edb-d936ce6ce8c0
+          6a5dd365-8b8c-475f-9175-163fa6d9f8fe:
+            id: 'entity_field:node:field_username'
+            label: Username
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: string
+              settings:
+                link_to_entity: false
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 109
+            uuid: 6a5dd365-8b8c-475f-9175-163fa6d9f8fe
+        id: panels_variant
+        label: Default
+        uuid: 37bca00d-9b05-4315-8d6c-17c6d4c7d254
+        weight: 0
+        layout: layout_onecol
+        layout_settings: {  }
+        page_title: '[node:title]'
+        storage_type: ''
+        storage_id: ''
+        builder: ipe
+        pattern: panelizer
+      theme_layout:
+        blocks:
+          9c3b1b5d-d853-42c9-95fe-9d6c91d39949:
+            id: 'entity_field:node:field_large_image'
+            label: 'Desktop image of the theme'
+            provider: ctools_block
+            label_display: visible
+            formatter:
+              label: hidden
+              type: image
+              settings:
+                image_style: medium_short
+                image_link: ''
+              third_party_settings: {  }
+              weight: 0
+            region: first
+            weight: 0
+            uuid: 9c3b1b5d-d853-42c9-95fe-9d6c91d39949
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+          94327dad-5a23-4544-94f8-f15ad8955928:
+            id: 'entity_field:node:field_medium_image'
+            label: 'Tablet image of the theme'
+            provider: ctools_block
+            label_display: visible
+            formatter:
+              label: hidden
+              type: image
+              settings:
+                image_style: thumbnail
+                image_link: ''
+              third_party_settings: {  }
+              weight: 0
+            region: first
+            weight: 0
+            uuid: 94327dad-5a23-4544-94f8-f15ad8955928
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+          f91b949b-e7f6-4cfb-b4c1-4501f617f7eb:
+            id: 'entity_field:node:field_small_image'
+            label: 'Mobile image of the theme'
+            provider: ctools_block
+            label_display: visible
+            formatter:
+              label: hidden
+              type: image
+              settings:
+                image_style: ''
+                image_link: ''
+              third_party_settings: {  }
+              weight: 0
+            region: first
+            weight: 0
+            uuid: f91b949b-e7f6-4cfb-b4c1-4501f617f7eb
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+          79ae5162-6694-42fa-9bf7-52c48bd84598:
+            id: 'entity_field:node:field_price'
+            label: 'Price of theme'
+            provider: ctools_block
+            label_display: visible
+            formatter:
+              label: hidden
+              type: number_decimal
+              settings:
+                thousand_separator: ','
+                prefix_suffix: true
+                decimal_separator: .
+                scale: 2
+              third_party_settings: {  }
+              weight: 0
+            region: second
+            weight: 0
+            uuid: 79ae5162-6694-42fa-9bf7-52c48bd84598
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+          4f5c531d-bd97-45ec-8045-3a40252118e9:
+            id: social_sharing_block
+            label: share
+            provider: social_media
+            label_display: visible
+            region: second
+            weight: 0
+            uuid: 4f5c531d-bd97-45ec-8045-3a40252118e9
+            context_mapping: {  }
+        id: panels_variant
+        uuid: c29f17c9-4061-4a33-bf59-b60ae5272f64
+        label: 'theme layout'
+        weight: 0
+        layout: layout_twocol
+        layout_settings: {  }
+        page_title: null
+        storage_type: panelizer_default
+        storage_id: 'node:theme:default:theme_layout'
+        pattern: panelizer
+        builder: ipe
+        static_context: {  }
 id: node.theme.default
 targetEntityType: node
 bundle: theme
@@ -157,4 +575,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  panelizer: true

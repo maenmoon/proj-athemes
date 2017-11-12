@@ -1,0 +1,5 @@
+# Schema for the theme setting configuration file of the athemes theme.
+
+athemestheme.settings:
+  type: athemetheme
+  label: 'THEMETITLE settings'
